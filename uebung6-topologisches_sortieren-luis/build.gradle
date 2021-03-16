@@ -1,0 +1,34 @@
+plugins {
+   id 'base'
+   id 'java'
+   id 'maven'
+   id 'idea'
+   id 'application'
+}
+
+group 'fh.campus.wien.algorithmen.datenstrukturen.ue'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+
+
+}
+
+test {
+
+    // enable TestNG support (default is JUnit)
+    useTestNG()
+
+}
+
+task wrapper(type: Wrapper, description: 'Creates and deploys the Gradle wrapper to the current directory.') {
+    gradleVersion = '4.7'
+}

@@ -1,0 +1,9 @@
+
+\.gradle/
+
+\.idea/
+bin/
+out/
+.project
+.settings/org.eclipse.buildship.core.prefs
+.classpath
